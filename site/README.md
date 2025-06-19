@@ -32,16 +32,14 @@ cd site
 pnpm install
 ```
 ## Environment variables
-In order to be able to connect to your Fuul Project, you need to provide the  ```apiKey```  asociated with your project. Store it in an environment variable inside a Create a ```.env``` file with the following entry: 
+In order to enable the connection to your Fuul Project, you need to provide the  ```apiKey```  associated with your project: if you don't already have one, create a ```.env``` file in ```/site/``` and add the following entry: 
 
-for vite projects:
+for this particular implementation (Vite):
 ```
 VITE_FUUL_API_KEY=your_project_key
 ```
-for CRA projects:
-```
-FUUL_API_KEY=your_project_key
-```
+
+
 ## Test Run
 
 After successfully finished, run the site from the ```/site/``` 
