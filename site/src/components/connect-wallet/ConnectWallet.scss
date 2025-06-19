@@ -1,0 +1,45 @@
+.connect-wallet-root {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	filter: drop-shadow(0 0 .4rem #f00);
+	transition: all .3s;
+
+	.connect-wallet-button {
+		transition: all .3s;
+		box-shadow: inset 0 0 .4rem #f00;
+		width: 10rem;
+		height: 2rem;
+		font-size: 1rem;
+		background-color: #000;
+		border: none;
+
+		&.connected {
+			background-color: #592;
+		}
+	}
+
+	&.connected {
+		filter: drop-shadow(.2rem .2rem .2rem #0005);
+
+		.connect-wallet-button {
+			box-shadow: none;
+		}
+	}
+
+	.connect-wallet-address {
+		background-color: #0005;
+		border-radius: .4rem;
+		color: #ccc;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: .8rem;
+	}
+
+	.logo {
+		width: 3rem;
+		margin-right: .5rem;
+	}
+
+}

@@ -1,0 +1,23 @@
+{
+	"name": "fuul-sdk",
+	"version": "1.0.0",
+	"description": "Fuul Interaction Library",
+	"main": "dist/index",
+	"types": "dist/types/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"fuul",
+		"crypto",
+		"nft",
+		"adtech"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^24.0.3",
+		"typescript": "^5.8.3"
+	}
+}

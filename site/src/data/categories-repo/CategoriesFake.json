@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Fast Food Punks",
+		"available": 2
+	},
+	{
+		"name": "CryptoPunks",
+		"available": 2
+	},
+	{
+		"name": "Pixel Art",
+		"available": 2
+	},
+	{
+		"name": "Abstract Art",
+		"available": 2
+	},
+	{
+		"name": "Round Art",
+		"available": 5
+	}
+]

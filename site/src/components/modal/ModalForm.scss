@@ -1,0 +1,143 @@
+.modal-form-root {
+	background-color: #0007;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .3s;
+
+	.modal-form {
+		min-width: 20rem;
+		min-height: 15rem;
+		border-radius: 50%;
+		width: 30rem;
+		height: 30rem;
+		background-color: #837e;
+		box-shadow: 0 0 5rem #000;
+		color: #ccc;
+		padding: 1rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: column;
+
+		div {
+			margin-top: .5rem;
+			margin-bottom: .5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: .2rem;
+		}
+
+		.modal-form-title {
+			font-size: 2rem;
+		}
+
+		.modal-form-minted {
+			font-size: 1rem;
+		}
+
+		.modal-form-tell {
+			font-size: 1.2rem;
+
+			span {
+				margin: .2rem;
+				overflow-wrap: break-word;
+			}
+		}
+
+		.modal-form-url {
+			max-width: 70%;
+			overflow-wrap: break-word;
+			font-size: 1.2rem;
+			color: #000;
+			background-color: #ccc4;
+			padding: .2rem;
+			border-radius: .5rem;
+			display: flex;
+			text-align: left;
+
+			span {
+				max-width: 90%;
+				font-size: .9rem;
+				overflow-wrap: break-word;
+			}
+		}
+
+		.modal-form-copy {
+			margin-left: .3rem;
+		}
+
+		.modal-form-share-strip {
+			display: flex;
+			flex-flow: row nowrap;
+
+			.modal-form-share {
+				background-color: #000;
+				width: 1.2rem;
+				padding: .1rem;
+				margin: .3rem;
+				border-radius: .3rem;
+				border: none;
+				overflow: hidden;
+				cursor: pointer;
+			}
+		}
+
+		.modal-form-img {
+			max-width: 8rem;
+			max-height: 8rem;
+			border-radius: 50%;
+			filter: drop-shadow(0 0 3rem #5ff) drop-shadow(0 0 3rem #5ff);
+			animation: giggle 8s forwards infinite;
+			outline: solid #fff2 .3rem;
+		}
+
+		--torch1:#ca7;
+		--torch2:#7dc;
+		--torch3:#8c5;
+
+		@keyframes giggle {
+			0% {
+				filter: drop-shadow(-2rem -1rem 3rem var(--torch1)) drop-shadow(-2rem -1rem 3rem var(--torch1));
+			}
+
+			25% {
+				filter: drop-shadow(-1rem 2rem 3rem var(--torch3)) drop-shadow(-1rem 2rem 3rem var(--torch3));
+			}
+
+			50% {
+				filter: drop-shadow(1rem 0 3rem var(--torch3)) drop-shadow(1rem 0 3rem var(--torch3));
+			}
+
+			60% {
+				filter: drop-shadow(1.4rem .8rem 3rem var(--torch2)) drop-shadow(1.4rem .8rem 3rem var(--torch2));
+			}
+
+			75% {
+				filter: drop-shadow(0 1rem 3rem var(--torch2)) drop-shadow(0 1rem 3rem var(--torch2));
+			}
+
+			100% {
+				filter: drop-shadow(-2rem -1rem 3rem var(--torch1)) drop-shadow(-2rem -1rem 3rem var(--torch1));
+			}
+		}
+
+		.modal-form-box {
+			background-color: #0007;
+			border-radius: .3rem;
+		}
+	}
+}
+
+.visible {
+	transition: opacity .3s;
+	opacity: 1;
+}

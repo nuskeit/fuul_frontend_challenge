@@ -1,0 +1,96 @@
+div {
+	padding: .2rem;
+	text-align: left;
+}
+
+img {
+	display: block;
+}
+
+button {
+	background-color: #222;
+	border: solid .1rem #fff5;
+	border-radius: .5rem;
+	padding: .3rem;
+	cursor: pointer;
+}
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+	color: #f2c;
+}
+
+.box {
+	border-radius: .6rem;
+	padding: .3rem;
+	margin: .3rem;
+}
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.col {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.txt-ali-center {
+	text-align: left;
+}
+
+
+
+.flex-ali-ite-cen {
+	display: flex;
+	align-items: center;
+}
+
+.flex-jus-con-cen {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.opacity-0 {
+	opacity: 0;
+}
+
+
+.b-radius-1 {
+	border-radius: .1rem;
+}
+
+.b-radius-2 {
+	border-radius: .2rem;
+}
+
+.b-radius-3 {
+	border-radius: .3rem;
+}
+
+.b-radius-4 {
+	border-radius: .4rem;
+}
+
+.b-radius-5 {
+	border-radius: .5rem;
+}
+
+
+.cur-pointer {
+	cursor: pointer;
+}

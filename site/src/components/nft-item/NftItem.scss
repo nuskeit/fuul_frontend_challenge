@@ -1,0 +1,37 @@
+.nftitem-root {
+	background: linear-gradient(#0007, #0001);
+	box-shadow: .2rem .2rem .2rem #0003;
+	max-width: 9rem;
+	width: 9rem;
+	box-sizing: content-box;
+	font-size: .7rem;
+
+
+	.nftitem-name {
+		color: #f7f;
+		filter: drop-shadow(.0rem .0rem .3rem #f0f);
+		overflow: hidden;
+		overflow-wrap: break-word;
+
+	}
+
+	.nftitem-category {
+		color: #7ff;
+		filter: drop-shadow(.0rem .0rem .3rem #0ff);
+		overflow: hidden;
+		word-break: break-word;
+	}
+
+	.nftitem-image-box {
+		position: relative;
+
+		.nftitem-image {
+			filter: drop-shadow(.2rem .2rem .2rem #0005);
+			max-width: 100%;
+			width: 100%;
+			margin-top: .2rem;
+			margin-bottom: .2rem;
+			border-radius: .3rem;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.image-root {
+	margin: 0;
+	padding: 0;
+	border-radius: .3rem;
+
+	.hidden {
+		background: red;
+		outline: solid red .2rem;
+		border: solid red .2rem;
+		display: none !important;
+	}
+}
+
+.preload {
+	border: solid .1rem #000a;
+	background: #0003;
+	box-shadow: inset 1rem 1rem 2rem #0007;
+	border-radius: .3rem;
+	background: repeating-linear-gradient(45deg, #0002 0, #0002 5%, #0000 10%, #0000 15%, #0002 20%);
+	background-size: 25%;
+	animation: bg_roll 1s linear 0s infinite forwards;
+}
+
+@keyframes bg_roll {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: -34% 34%;
+	}
+}

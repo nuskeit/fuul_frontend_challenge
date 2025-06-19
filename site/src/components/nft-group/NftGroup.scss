@@ -1,0 +1,21 @@
+.ntfgroup-root {
+	background-color: #0002;
+	background: linear-gradient(#0005, #f002);
+	transition: all 0;
+	box-shadow: .2rem .2rem .2rem #0005;
+	flex: 1 0 auto;
+	max-width: calc(100% - 1.4rem);
+	display: flex;
+	align-items: center;
+}
+
+.exhausted {
+	transition: all 2s;
+	background: #0006;
+	opacity: .5;
+	filter: grayscale(1);
+
+	* {
+		cursor: no-drop;
+	}
+}
