@@ -21,7 +21,7 @@ export default function ConnectWallet() {
 
 				walletSetter(getWalletFactory().create({ address: accounts[0] || "", ethereum }))
 
-				// check if Metamask went off or disconnected
+				// check if Metamask froze or disconnected
 				ethereum.on('accountsChanged', (accounts: string[]) => {
 					if (accounts.length === 0)
 						walletSetter({ ...wallet, ethereum: undefined })
