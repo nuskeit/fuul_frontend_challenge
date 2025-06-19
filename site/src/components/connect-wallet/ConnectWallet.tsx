@@ -3,7 +3,7 @@ import { useWallet } from "../../context/wallet/useWalletData"
 import { useWalletSetter } from "../../context/wallet/useWalletSetter"
 import { getWalletFactory } from "../../lib/factory/WalletFactory"
 import { breakWalletAddress } from "../../lib/util/breakWalletAddress"
-import Image from "../ui/image/Image"
+import ImageLoader from "../ui/image-loader/ImageLoader"
 import "./ConnectWallet.scss"
 
 export default function ConnectWallet() {
@@ -41,21 +41,17 @@ export default function ConnectWallet() {
 		}
 	}
 
-	const isConnected = () => wallet.address !== ""
+	const isConnected = () => wallet.address?.trim() !== ""
 
 	return (
 		<div className={`connect-wallet-root col ${isConnected() ? "connected" : ""}`}>
 			<div className="row flex-ali-ite-cen">
 				<span>
-					<Image src="/fuul2.png" alt="" width={"10px"} height={"10px"} className="logo"
+					<ImageLoader src="/fuul2.png" alt="" width={"10px"} height={"10px"} className="logo"
 					/></span>
 				<button className={`connect-wallet-button ${isConnected() ? "connected" : ""}`}
 					onClick={handleConnectWallet}>
-					{
-						wallet.address?.trim() == ""
-							? "Connect Wallet"
-							: "Wallet Connected!"
-					}
+					{isConnected() ? "Wallet Connected!" : "Connect Wallet"}
 				</button>
 			</div>
 			{isConnected() &&

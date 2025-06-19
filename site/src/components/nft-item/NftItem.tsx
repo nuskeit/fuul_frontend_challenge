@@ -1,5 +1,5 @@
 import type { INft } from "../../lib/types/INft"
-import Image from "../ui/image/Image"
+import ImageLoader from "../ui/image-loader/ImageLoader"
 import "./NftItem.scss"
 
 export default function NftItem({
@@ -18,7 +18,7 @@ export default function NftItem({
 					{nft.name}
 				</div>
 				<div className="nftitem-image-box">
-					<Image src={nft.image} alt="" className="nftitem-image" width="8.2rem" height="8.2rem" />
+					<ImageLoader src={nft.image} alt="" className="nftitem-image" width="8.2rem" height="8.2rem" />
 				</div>
 				<div className="nftitem-category flex-ali-ite-cen flex-jus-con-cen">
 					{nft.category}

@@ -2,13 +2,13 @@ import { useEffect, useState } from "react"
 import { useSessionData } from "../../context/wallet/useSessionData"
 import type { INft } from "../../lib/types/INft"
 import { copyToClipboard } from "../../lib/util/copyToClipboard"
-import Image from "../ui/image/Image"
+import ImageLoader from "../ui/image-loader/ImageLoader"
 import "./ModalForm.scss"
 
 const shareRef = async (url: string) => {
 	await navigator.share({
-		title: "Check out this, it's mental, get rewards for poking a NFT 😱",
-		text: "Check out this, it's mental, get rewards for poking a NFT 😱",
+		title: "Check out this, I minted a NFT and got rewarded just for poking a link 😱",
+		text: "Check out this, I minted a NFT and got rewarded just for poking a link 😱",
 		url
 	})
 }
@@ -52,7 +52,7 @@ export default function ModalForm({
 				</div>
 
 				<div className="modal-form-tell">
-					<Image src={nft.image} alt="" className="modal-form-img" width="8rem" height="8rem" />
+					<ImageLoader src={nft.image} alt="" className="modal-form-img" width="8rem" height="8rem" />
 				</div>
 
 				<div className="modal-form-tell col">
@@ -70,10 +70,10 @@ export default function ModalForm({
 				</div>
 
 				<div className="modal-form-share-strip">
-					<Image src="https://s.magecdn.com/social/tc-discord.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
-					<Image src="https://s.magecdn.com/social/tc-instagram.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
-					<Image src="https://s.magecdn.com/social/tc-reddit.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
-					<Image src="https://s.magecdn.com/social/tc-x.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
+					<ImageLoader src="https://s.magecdn.com/social/tc-discord.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
+					<ImageLoader src="https://s.magecdn.com/social/tc-instagram.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
+					<ImageLoader src="https://s.magecdn.com/social/tc-reddit.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
+					<ImageLoader src="https://s.magecdn.com/social/tc-x.svg" alt="" className="modal-form-share" width="1.2rem" height="1.2rem" onClick={() => shareRef(getReferalUrl())} />
 				</div>
 
 			</div>

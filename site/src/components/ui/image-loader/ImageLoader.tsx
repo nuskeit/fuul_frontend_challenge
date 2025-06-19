@@ -1,7 +1,7 @@
 import { useState } from "react"
-import "./Image.scss"
+import "./ImageLoader.scss"
 
-export default function Image({
+export default function ImageLoader({
 	src,
 	alt,
 	minWidth,
