@@ -11,9 +11,9 @@ function App() {
 	 */
 	const fuul = useFuulSdk(import.meta.env.VITE_FUUL_API_KEY)
 	/**
-	 * Not having the complete implementation of a SDK, with state management
-	 * and complete structure, I decided to store relevant data in SessionData,
-	 * to make it available for the MODAL
+	 * Not having the complete implementation of a SDK, with its own state 
+	 * management, I decided to store retrieved data in SessionData, a 
+	 * context provided state, to make it available for the MODAL
 	 */
 	const setSessionData = useSessionDataSetter()
 
